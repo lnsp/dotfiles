@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Configuring HyperTerm ..."
+echo "Installing hyper plugin manager ..."
 npm install -g hpm-cli
-hpm install power
-hpm install hyperblue
+echo "Installing gruvbox theme ..."
+hpm install hyperterm-gruvbox-dark

@@ -7,6 +7,10 @@ echo "Installing homebrew ..."
 echo "Installing command line tools ..."
 ./brew.sh
 
+# configure nvim
+echo "Configuring neovim ..."
+./nvim.sh
+
 # bootstrap oh my zsh
 echo "Installing oh-my-zsh ..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
