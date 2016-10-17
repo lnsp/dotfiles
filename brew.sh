@@ -102,6 +102,8 @@ brew install vbindiff
 brew install webkit2png
 brew install zopfli
 
+brew install neovim
+
 # install apps
 brew cask install google-chrome
 brew cask install atom
