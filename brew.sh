@@ -22,6 +22,7 @@ brew install gnu-sed --with-default-names
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
+brew tap caskroom/cask
 brew tap homebrew/versions
 brew install bash-completion2
 
@@ -100,6 +101,13 @@ brew install tree
 brew install vbindiff
 brew install webkit2png
 brew install zopfli
+
+# install apps
+brew cask install google-chrome
+brew cask install atom
+brew cask install transmission
+brew cask install sizeup
+brew cask install iterm2
 
 # Remove outdated versions from the cellar.
 brew cleanup
