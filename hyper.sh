@@ -3,5 +3,5 @@
 echo "Configuring HyperTerm ..."
 echo "Installing hyper plugin manager ..."
 npm install -g hpm-cli
-echo "Installing gruvbox theme ..."
-hpm install hyperterm-gruvbox-dark
+echo "Installing seti theme ..."
+hpm install hyperseti
