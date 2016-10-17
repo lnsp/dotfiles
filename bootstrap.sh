@@ -11,6 +11,11 @@ echo "Installing command line tools ..."
 echo "Installing oh-my-zsh ..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# configure oh my zsh
+echo "Configuring shell ..."
+./zsh.sh
+./hyper.sh
+
 # run .macos config
 echo "Configuring macOS ..."
 ./macos.sh

@@ -75,6 +75,7 @@ brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
 brew install xpdf
 brew install xz
+brew install npm
 
 # Install other useful binaries.
 brew install ack
@@ -96,14 +97,6 @@ brew install tree
 brew install vbindiff
 brew install webkit2png
 brew install zopfli
-
-# install apps
-brew tap caskroom/cask
-brew cask install google-chrome
-brew cask install atom
-brew cask install transmission
-brew cask install sizeup
-brew cask install iterm2
 
 # Remove outdated versions from the cellar.
 brew cleanup
