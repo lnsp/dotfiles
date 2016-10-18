@@ -18,6 +18,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # configure oh my zsh
 echo "Configuring shell ..."
 ./zsh.sh
+./iterm2.sh
 ./hyper.sh
 
 # run .macos config
