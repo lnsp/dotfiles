@@ -31,4 +31,4 @@ brew cask install balenaetcher
 brew cask install tunnelblick
 brew cask install tor-browser
 brew cask install skype
-
+brew cask install julia
