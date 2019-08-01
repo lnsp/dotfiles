@@ -14,6 +14,7 @@ cp -r .vim_runtime $HOME/.vim_runtime
 cp .vimrc $HOME/.vimrc
 
 echo "Configuring tmux ..."
+./tmux.sh
 
 # bootstrap oh my zsh
 echo "Installing oh-my-zsh ..."
