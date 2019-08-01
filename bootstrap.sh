@@ -13,6 +13,8 @@ echo "Configuring vim ..."
 cp -r .vim_runtime $HOME/.vim_runtime
 cp .vimrc $HOME/.vimrc
 
+echo "Configuring tmux ..."
+
 # bootstrap oh my zsh
 echo "Installing oh-my-zsh ..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
