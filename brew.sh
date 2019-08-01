@@ -1,105 +1,263 @@
-#!/usr/bin/env bash
-
-# Install command-line tools using Homebrew.
-
-# Make sure we’re using the latest Homebrew.
 brew update
-
-# Upgrade any already-installed formulae.
 brew upgrade
-
-# Install GNU core utilities (those that come with macOS are outdated).
-# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-brew install coreutils
-
-# Install some other useful utilities like `sponge`.
-brew install moreutils
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
-brew install findutils
-# Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
-
-# Install zsh
-brew install zsh
-if ! fgrep -q '/usr/local/bin/zsh' /etc/shells; then
-  echo '/usr/local/bin/zsh' | sudo tee -a /etc/shells;
-  chsh -s /usr/local/bin/zsh;
-fi;
-
-brew tap homebrew/versions
-
-# Install `wget` with IRI support.
-brew install wget --with-iri
-
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
-
-# Install more recent versions of some macOS tools.
-brew install neovim/neovim/neovim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-brew install homebrew/php/php56 --with-gmp
-
-# Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
-
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
+brew install adns
+brew install adwaita-icon-theme
+brew install ant
+brew install aom
+brew install aspcud
+brew install atk
+brew install autoconf
+brew install autogen
+brew install automake
+brew install bash
+brew install bat
+brew install bazaar
+brew install bdw-gc
+brew install berkeley-db
 brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
-
-# Install runtimes
-brew install python
-brew install npm
-
-# Install other useful binaries.
-brew install ack
-brew install dark-mode
+brew install cabal-install
+brew install cairo
+brew install camlp4
+brew install check
+brew install clang-format
+brew install clasp
+brew install clingo
+brew install cmake
+brew install cmatrix
+brew install cocoapods
+brew install coreutils
+brew install cowsay
+brew install ctls
+brew install ctop
+brew install dep
+brew install doctl
+brew install drone
+brew install dshb
+brew install faac
+brew install faad2
+brew install ffmpeg
+brew install fish
+brew install flac
+brew install fontconfig
+brew install fortune
+brew install freetype
+brew install frei0r
+brew install fribidi
+brew install gcc
+brew install gd
+brew install gdbm
+brew install gdk-pixbuf
+brew install gettext
+brew install ghc
+brew install ghostscript
+brew install giflib
 brew install git
-brew install git-lfs
-brew install imagemagick --with-webp
+brew install glib
+brew install glib-networking
+brew install glide
+brew install gmp
+brew install gnupg
+brew install gnutls
+brew install go
+brew install gobject-introspection
+brew install gpgme
+brew install graphite2
+brew install graphviz
+brew install gringo
+brew install gsettings-desktop-schemas
+brew install gst-libav
+brew install gst-plugins-bad
+brew install gst-plugins-base
+brew install gst-plugins-good
+brew install gst-plugins-ugly
+brew install gstreamer
+brew install gtk+3
+brew install gtk-vnc
+brew install gtksourceview4
+brew install gts
+brew install guile
+brew install harfbuzz
+brew install haskell-stack
+brew install hicolor-icon-theme
+brew install htop
+brew install hub
+brew install hugo
+brew install icu4c
+brew install ideviceinstaller
+brew install ifstat
+brew install ilmbase
+brew install imagemagick
+brew install intltool
+brew install ios-deploy
+brew install ipython@5
+brew install isl
+brew install jasper
+brew install jemalloc
+brew install jpeg
+brew install jq
+brew install json-glib
+brew install jx
+brew install kubernetes-cli
+brew install kubernetes-helm
+brew install lame
+brew install leptonica
+brew install libarchive
+brew install libass
+brew install libassuan
+brew install libbluray
+brew install libcroco
+brew install libde265
+brew install libepoxy
+brew install libevent
+brew install libffi
+brew install libgcrypt
+brew install libgpg-error
+brew install libheif
+brew install libidn2
+brew install libimobiledevice
+brew install libksba
+brew install libmms
+brew install libmodplug
+brew install libmpc
+brew install libnet
+brew install libnice
+brew install libnids
+brew install libogg
+brew install libomp
+brew install libosinfo
+brew install libpcap
+brew install libplist
+brew install libpng
+brew install libpsl
+brew install libressl
+brew install librsvg
+brew install libsamplerate
+brew install libshout
+brew install libsndfile
+brew install libsoup
+brew install libsoxr
+brew install libssh2
+brew install libtasn1
+brew install libtermkey
+brew install libtiff
+brew install libtool
+brew install libunistring
+brew install libusb
+brew install libuv
+brew install libvirt
+brew install libvirt-glib
+brew install libvorbis
+brew install libvpx
+brew install libvterm
+brew install libxml2
+brew install libyaml
+brew install libzip
+brew install little-cms2
+brew install lolcat
 brew install lua
-brew install lynx
-brew install p7zip
-brew install pigz
-brew install pv
-brew install rename
-brew install rhino
-brew install speedtest_cli
-brew install ssh-copy-id
-brew install testssl
+brew install luajit
+brew install lz4
+brew install lzo
+brew install mas
+brew install maven
+brew install mercurial
+brew install micro
+brew install mpfr
+brew install msgpack
+brew install mysql-client
+brew install ncurses
+brew install neofetch
+brew install neovim
+brew install netpbm
+brew install nettle
+brew install node
+brew install npth
+brew install ocaml
+brew install ocamlbuild
+brew install oniguruma
+brew install opam
+brew install opencore-amr
+brew install openexr
+brew install openjpeg
+brew install openshift-cli
+brew install openssl
+brew install openssl@1.1
+brew install opus
+brew install orc
+brew install osinfo-db
+brew install osinfo-db-tools
+brew install p11-kit
+brew install pacvim
+brew install pandoc
+brew install pandoc-citeproc
+brew install pango
+brew install pcre
+brew install pcre2
+brew install pinentry
+brew install pinentry-mac
+brew install pixman
+brew install pkg-config
+brew install protobuf
+brew install py2cairo
+brew install py3cairo
+brew install pygobject3
+brew install python
+brew install python3
+brew install python@2
+brew install qemu
+brew install qt
+brew install readline
+brew install rtmpdump
+brew install rtv
+brew install rubberband
+brew install screenfetch
+brew install screenresolution
+brew install sdl2
+brew install sdl2_gfx
+brew install sdl2_image
+brew install sdl2_mixer
+brew install sdl2_net
+brew install sdl2_ttf
+brew install shared-mime-info
+brew install sl
+brew install snappy
+brew install socat
+brew install speex
+brew install spice-gtk
+brew install spice-protocol
+brew install sqlite
+brew install srtp
+brew install sysbench
+brew install taglib
+brew install telnet
+brew install terraform
+brew install tesseract
+brew install thefuck
+brew install theora
+brew install tldr
+brew install tmux
 brew install tree
-brew install vbindiff
-brew install webkit2png
-brew install zopfli
-
-# Remove outdated versions from the cellar.
+brew install unbound
+brew install unibilium
+brew install usbmuxd
+brew install usbredir
+brew install vala
+brew install vapor
+brew install vde
+brew install virt-manager
+brew install virt-viewer
+brew install vte3
+brew install watch
+brew install webp
+brew install wget
+brew install wireguard-go
+brew install wireguard-tools
+brew install x264
+brew install x265
+brew install xvid
+brew install xz
+brew install yajl
+brew install youtube-dl
+brew install zeromq
+brew install zsh
 brew cleanup

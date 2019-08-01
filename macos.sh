@@ -46,19 +46,6 @@ defaults write com.apple.universalaccess reduceTransparency -bool false
 #	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
 #	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
-# Set highlight color to green
-defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
-defaults delete -g AppleHighlightColor
-
-# Set sidebar icon size to medium
-defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
-defaults delete -g NSTableViewDefaultSizeMode
-
-# Always show scrollbars
-defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
-defaults delete -g AppleShowScrollBars
-# Possible values: `WhenScrolling`, `Automatic` and `Always`
-
 # Disable the over-the-top focus ring animation
 defaults write NSGlobalDomain NSUseAnimatedFocusRing -bool false
 defaults delete -g NSUserAnimatedFocusRing
@@ -124,7 +111,7 @@ sudo systemsetup -setrestartfreeze on
 
 # Disable Notification Center and remove the menu bar icon
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
-launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+#launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
 
 # Disable smart quotes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
